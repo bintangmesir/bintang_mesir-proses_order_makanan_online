@@ -1,0 +1,17 @@
+Algorithma proses order makanan via online
+
+1. User membuka halaman website pembelian
+2. User lalu menuju halaman login akun
+3. Apakah user sudah mempunyai akun?
+3.1 jika sudah user melakukan login dengan memasukkan email dan pasword, dilanjutkan proses ke 4
+3.2 jika belum user melakukan registrasi dengan memasukkan username, email, password, dan alamat, lalu kembali ke proses 3
+4. User berhasil login akan diarahkan kehalaman menu makanan
+5. User memilih jenis makanan yang akan mereka pilih
+5.1 jika user sudah memilih makanan yang mereka pilih dilanjutkan kehalaman pembelian, dilanjutkan proses 6
+5.2 jika user tidak menemukan makanan yang mereka pilih tampilkan pesan "Makanan tidak ditemukan"
+6. User akan memastikan pesanan yang mereka pilih sesuai
+6.1 Jika pesanan sudah sesuai user akan melihat struk pembayaran dan diminta melakukan pembayaran serta mengecheck data diri
+6.3 Jika user ingin melakukan penambahan barang makanan user akan dikembalikan ke proses 5 dengan history makanan sebelumnya tetap tersimpan
+6.4 Jika user ingin melakukan pembatalan pembelian tekan tombol batal
+7. User akan mendapati notifikasi pesanan sedang di proses
+8. User melakukan logout pada aplikasi
