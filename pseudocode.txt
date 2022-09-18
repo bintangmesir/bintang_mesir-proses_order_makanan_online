@@ -3,7 +3,7 @@ Program proses_order_makanan_online
 
 Deklarasi :
 name, password, email, alamat, food_name, food_description : string
-price, menu_input, food_input : integer
+price, menu_input, food_input, total_food, x : integer
 
 Begin 
 Pilihan 
@@ -13,14 +13,14 @@ Pilihan
           2. Regiter) 
   Input ( menu_input ) 
   Read ( menu_input ) 
-  if ( menu_input == 1 )     
+  If ( menu_input == 1 )     
     goto ( Pilihan1 )
-  else if ( menu_input == 2 )
+  Else If ( menu_input == 2 )
     goto ( Pilihan2 )
-  else
+  Else
     Write ( Pilihan tidak diketahui ) 
     goto ( Pilihan ) 
-  end if
+  End If
 
   Pilihan1
   Write ( Masukkan Akun Anda ) 
@@ -28,15 +28,15 @@ Pilihan
   Input ( email ) 
   Write ( Masukkan Password Anda :
   Input ( password )  
-  if ( email && password == TRUE )     
+  If ( email && password == TRUE )     
     goto ( Pilihan3 )
-  else if ( email && password == FALSE )
+  Else If ( email && password == FALSE )
     Write ( Email atau password yang anda masukkan salah )
     goto ( Pilihan1 )
-  else
+  Else
     Write ( Akun anda belum terdaftar )
     goto ( Pilihan2 )
-  end if
+  End If
 
   Pilihan2
   Write ( Buat akun baru ) 
@@ -59,6 +59,29 @@ Pilihan
   Input ( food_input ) 
   Read ( food_input ) 
   If ( food_input <= 0 ) OR ( food_input > 3 ) then 
-  Write ( Menu tdk ada ) 
-  goto ( Pilihan ) 
-  end if
+    Write ( Menu tdk ada ) 
+    goto ( Pilihan3 )
+  Else
+    goto ( pilihan4 ) 
+  End If
+
+  Pilihan4
+  While i < 1
+    Write ( PORSI YANG AKAN DIBELI)
+    Write ( Masukkan Pilihan Anda )
+    Input ( total_food )
+    Read ( total_food )
+    If ( total_food <= 0 ) OR ( total_food > 3 ) then
+      Write ( Porsi tdk mencukupi )
+      goto ( Pilihan4 )
+    Else If
+      Write ( Apakah anda ingin menambah pesanan ? )
+      Input ( x )
+        If ( x == 1 )
+          goto ( Pilihan4 )
+        Else
+          BREAK 
+    End If
+      Write ( Banyak Pesanan Anda )
+  Endwhile
+  
