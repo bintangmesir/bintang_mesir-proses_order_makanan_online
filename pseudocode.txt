@@ -3,7 +3,7 @@ Program proses_order_makanan_online
 
 Deklarasi :
 name, password, email, alamat, food_name, food_description : string
-price, menu_input, food_input, total_food, x : integer
+price, menu_input, food_input, total_food, x, total_harga, bayar : integer
 
 Begin 
 Pilihan 
@@ -84,4 +84,8 @@ Pilihan
     End If
       Write ( Banyak Pesanan Anda )
   Endwhile
+
+  write ( total_harga )
+  write ( bayar )
+End
   
