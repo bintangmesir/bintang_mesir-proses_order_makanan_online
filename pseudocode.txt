@@ -3,4 +3,21 @@ Program proses_order_makanan_online
 
 Deklarasi :
 name, password, email, food_name, food_description : string
-price : integer
+price, menu_input : integer
+
+Begin 
+Pilihan 
+  Write ( SELAMAT DATANG ) 
+  Write ( Masukkan Pilihan Anda :
+          1. Log-In
+          2. Regiter) 
+  Input ( menu_input ) 
+  Read ( menu_input ) 
+  if ( menu_input == 1 )     
+    goto ( Pilihan1 )
+  else if ( menu_input == 2 )
+    goto ( Pilihan2 )
+  else
+    Write ( Pilihan tidak diketahui ) 
+    goto ( Pilihan ) 
+  end if (10)
