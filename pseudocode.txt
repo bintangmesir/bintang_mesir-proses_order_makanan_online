@@ -1,2 +1,6 @@
 Tittle :
 Program proses_order_makanan_online
+
+Deklarasi :
+name, password, email, food_name, food_description : string
+price : integer
