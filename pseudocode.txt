@@ -3,7 +3,7 @@ Program proses_order_makanan_online
 
 Deklarasi :
 name, password, email, alamat, food_name, food_description : string
-price, menu_input : integer
+price, menu_input, food_input : integer
 
 Begin 
 Pilihan 
@@ -49,3 +49,16 @@ Pilihan
   Write ( Masukkan Alamat Anda :
   Input ( alamat )  
   goto ( Pilihan1 )
+
+  Pilihan3
+  Write ( PILIH MENU MAKANAN ) 
+  Write ( Masukkan Pilihan Anda :
+  1. Ayam bakar
+  2. Sate kambing
+  3. Tongseng ) 
+  Input ( food_input ) 
+  Read ( food_input ) 
+  If ( food_input <= 0 ) OR ( food_input > 3 ) then 
+  Write ( Menu tdk ada ) 
+  goto ( Pilihan ) 
+  end if
