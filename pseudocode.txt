@@ -21,3 +21,19 @@ Pilihan
     Write ( Pilihan tidak diketahui ) 
     goto ( Pilihan ) 
   end if (10)
+
+  Pilihan1
+  Write ( Masukkan Akun Anda ) 
+  Write ( Masukkan Email Anda :
+  Input ( email ) 
+  Write ( Masukkan Password Anda :
+  Input ( password )  
+  if ( email && password == TRUE )     
+    goto ( Pilihan3 )
+  else if ( email && password == FALSE )
+    Write ( Email atau password yang anda masukkan salah )
+    goto ( Pilihan1 )
+  else
+    Write ( Akun anda belum terdaftar )
+    goto ( Pilihan2 )
+  end if (10)
