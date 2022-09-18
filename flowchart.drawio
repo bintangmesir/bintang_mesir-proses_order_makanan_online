@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="jUej-17rBzXgPkt0ivi0" name="Page-1">
-        <mxGraphModel dx="821" dy="550" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="821" dy="247" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -168,11 +168,17 @@
                 <mxCell id="63" value="No" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
                     <mxGeometry x="590.5" y="1540" width="30" height="20" as="geometry"/>
                 </mxCell>
+                <mxCell id="72" style="edgeStyle=none;html=1;" edge="1" parent="1" source="64" target="71">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
                 <mxCell id="64" value="Tampilkan bukti pembelian" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
                     <mxGeometry x="438.63" y="1690" width="172.75" height="50" as="geometry"/>
                 </mxCell>
                 <mxCell id="67" value="Yes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-                    <mxGeometry x="541.81" y="1650" width="40" height="20" as="geometry"/>
+                    <mxGeometry x="535" y="1650" width="40" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="71" value="START" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+                    <mxGeometry x="475" y="1790" width="100" height="60" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
