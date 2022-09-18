@@ -1,0 +1,91 @@
+Tittle :
+Program proses_order_makanan_online
+
+Deklarasi :
+name, password, email, alamat, food_name, food_description : string
+price, menu_input, food_input, total_food, x, total_harga, bayar : integer
+
+Begin 
+Pilihan 
+  Write ( SELAMAT DATANG ) 
+  Write ( Masukkan Pilihan Anda :
+          1. Log-In
+          2. Regiter) 
+  Input ( menu_input ) 
+  Read ( menu_input ) 
+  If ( menu_input == 1 )     
+    goto ( Pilihan1 )
+  Else If ( menu_input == 2 )
+    goto ( Pilihan2 )
+  Else
+    Write ( Pilihan tidak diketahui ) 
+    goto ( Pilihan ) 
+  End If
+
+  Pilihan1
+  Write ( Masukkan Akun Anda ) 
+  Write ( Masukkan Email Anda :
+  Input ( email ) 
+  Write ( Masukkan Password Anda :
+  Input ( password )  
+  If ( email && password == TRUE )     
+    goto ( Pilihan3 )
+  Else If ( email && password == FALSE )
+    Write ( Email atau password yang anda masukkan salah )
+    goto ( Pilihan1 )
+  Else
+    Write ( Akun anda belum terdaftar )
+    goto ( Pilihan2 )
+  End If
+
+  Pilihan2
+  Write ( Buat akun baru ) 
+  Write ( Masukkan Username Anda :
+  Input ( name ) 
+  Write ( Masukkan Email Anda :
+  Input ( email ) 
+  Write ( Masukkan Password Anda :
+  Input ( password )  
+  Write ( Masukkan Alamat Anda :
+  Input ( alamat )  
+  goto ( Pilihan1 )
+
+  Pilihan3
+  Write ( PILIH MENU MAKANAN ) 
+  Write ( Masukkan Pilihan Anda :
+  1. Ayam bakar
+  2. Sate kambing
+  3. Tongseng ) 
+  Input ( food_input ) 
+  Read ( food_input ) 
+  If ( food_input <= 0 ) OR ( food_input > 3 ) then 
+    Write ( Menu tdk ada ) 
+    goto ( Pilihan3 )
+  Else
+    goto ( pilihan4 ) 
+  End If
+
+  Pilihan4
+  While i < 1
+    Write ( PORSI YANG AKAN DIBELI)
+    Write ( Masukkan Pilihan Anda )
+    Input ( total_food )
+    Read ( total_food )
+    If ( total_food <= 0 ) OR ( total_food > 3 ) then
+      Write ( Porsi tdk mencukupi )
+      goto ( Pilihan4 )
+    Else If
+      Write ( Apakah anda ingin menambah pesanan ? )
+      Input ( x )
+        If ( x == 1 )
+          goto ( Pilihan4 )
+        Else
+          BREAK 
+    End If
+      Write ( Banyak Pesanan Anda )
+  Endwhile
+
+  write ( total_harga )
+  write ( bayar )
+End
+  
