@@ -2,7 +2,7 @@ Tittle :
 Program proses_order_makanan_online
 
 Deklarasi :
-name, password, email, food_name, food_description : string
+name, password, email, alamat, food_name, food_description : string
 price, menu_input : integer
 
 Begin 
@@ -20,7 +20,7 @@ Pilihan
   else
     Write ( Pilihan tidak diketahui ) 
     goto ( Pilihan ) 
-  end if (10)
+  end if
 
   Pilihan1
   Write ( Masukkan Akun Anda ) 
@@ -36,4 +36,16 @@ Pilihan
   else
     Write ( Akun anda belum terdaftar )
     goto ( Pilihan2 )
-  end if (10)
+  end if
+
+  Pilihan2
+  Write ( Buat akun baru ) 
+  Write ( Masukkan Username Anda :
+  Input ( name ) 
+  Write ( Masukkan Email Anda :
+  Input ( email ) 
+  Write ( Masukkan Password Anda :
+  Input ( password )  
+  Write ( Masukkan Alamat Anda :
+  Input ( alamat )  
+  goto ( Pilihan1 )
